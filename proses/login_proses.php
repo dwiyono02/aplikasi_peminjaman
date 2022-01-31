@@ -8,6 +8,7 @@ require_once '../config/db.php';
 $username = mysqli_real_escape_string($conn, $_POST['username']);
 $password = sha1(mysqli_real_escape_string($conn, $_POST['password']));
 $level = $_POST['level'];
+//sfdsgsfd ndfyhgfhdfgjfjfjfgjhfg
 
 if(empty($username) || empty($password) || empty($level)) {
   header('Location: ../index.php');
