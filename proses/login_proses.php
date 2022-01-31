@@ -8,7 +8,7 @@ require_once '../config/db.php';
 $username = mysqli_real_escape_string($conn, $_POST['username']);
 $password = sha1(mysqli_real_escape_string($conn, $_POST['password']));
 $level = $_POST['level'];
-//sfdsgsfd ndfyhgfhdfgjfjfjfgjhfg
+//sfdsgsfd
 
 if(empty($username) || empty($password) || empty($level)) {
   header('Location: ../index.php');
@@ -33,5 +33,5 @@ if($query->num_rows > 0) {
   $_SESSION['error'] = "Data yang anda masukan salah, silahkan coba lagi";
   header('Location: ../index.php');
 }
-
+//dfsdgsdhgsfhsfdh
 ?>
